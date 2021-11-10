@@ -82,3 +82,29 @@
         }
     }
 }
+
+    .navbar{
+         width: 100%;
+         position: sticky;
+         top: 0;
+         z-index: 5;
+              
+    }
+
+@media screen and (min-width:951px) {
+   
+    .navbar{
+        display: none;
+            
+    }
+
+} 
+@media screen and (max-width:951px) {
+    .header--nav{
+        display: none;
+    }
+    .header--h2{
+        display: none;
+    }
+    
+}
