@@ -1,0 +1,174 @@
+.index--section{
+    width: 100%;
+    min-height:80vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid $black;
+
+
+
+}
+
+.index--section1{
+    @extend .index--section;
+    @include flex(column,nowrap);
+    
+    .section1--h3{
+        margin-left: 5vw;
+        font-size: 30px;
+        width:fit-content;
+        min-height: 5vh;
+    }
+    .section1--p{
+        margin-left: 5vw;
+        font-size: 16px;
+        width:fit-content;
+        min-height: 5vh;
+        padding: 2%
+    }
+    .section1--div_ejemplos{
+        width: 90vw;
+        margin:auto;
+        @include flex(row,wrap);
+        justify-content:flex-start;
+
+        .Ejemplo{
+            @include flex(column,wrap);
+            margin: auto;
+            align-items: center;
+            width:30vw;
+            min-height: 45vh;
+            padding: 1vh;
+            background-color: $white;
+            &:hover{
+                
+                    opacity: 1;
+                    z-index: 2;
+                
+            }
+            
+            .Ejemplo--a{
+                text-decoration: none;
+                color: $black;
+                width: 98%;
+                min-height: 43vh;
+                background-color: $white;
+                .Ejemplo--conteiner{
+                    @include flex(column,wrap);
+                    border: 1px solid $black;
+                    width: 98%;
+                    min-height: 43vh;
+                    transition:transform .3s;
+                    background-color: $white;
+                    &:hover{
+                        transform: scale(1.35);
+                        .ejemplo--div{
+                            opacity: 1;
+                            z-index: 2;
+                        }
+                    }
+                    .ejemplo--titulo{  
+                        width: 100%;
+                        padding: 1%;
+                        text-align: center;
+                        
+                        height: 20%;
+                    }
+                    .ejemplo--div{
+                        justify-content: center;
+                        height:80%;
+                        opacity: .5;
+                        margin: auto;
+                        width: 80%;
+                        height: 60%;
+                        overflow: hidden;
+                        @include flex(column,wrap);
+                        .ejemplo--imagen{
+                            max-width: 100%;
+                            
+                            align-items: center;
+                            justify-content: center;
+                        }
+    
+                    }
+                }
+            }
+            
+
+        }
+
+
+
+    }
+
+
+
+
+}
+.index--section2{
+    background-color: $black;
+    color: $white;
+    @extend .index--section;
+    @include flex(column,nowrap);
+    padding-top: 5%;
+    opacity: .7;
+    transition: opacity .5s;
+    &:hover{
+        opacity: 1;
+    }
+
+    .section2--h3{
+        margin-left: 5vw;
+        font-size: 30px;
+        width:fit-content;
+        min-height: 5vh;
+    }
+    .section2--bloque{
+        margin-top: 2vh;
+        margin-left: 5vw;
+        width: 90%;
+        border-radius: 8px;
+        background-color: $black;
+        transition: color 2s;
+        transition: background-color 2s;
+
+        
+
+        .bloque--pregunta{
+            font-size: 20px;            
+            width:fit-content;
+            padding: 1vh;
+        }
+        .bloque--respuesta{
+            color: $black;
+            font-size: 16px;
+            width:fit-content;
+            padding: 1vh;
+            
+        }
+
+        &:hover{
+            background-color: $white;
+            color: $black;
+            .bloque--pregunta{
+                
+                font-size: 20px;            
+                width:fit-content;
+                padding: 1vh;
+            }
+            .bloque--respuesta{        
+                font-size: 16px;
+                width:fit-content;
+                padding: 1vh;
+            }
+        }
+    }
+    
+
+}
+.index--section3{
+    @extend .index--section;
+}
+.index--section4{
+    @extend .index--section;
+}
