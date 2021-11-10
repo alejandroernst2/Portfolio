@@ -317,6 +317,28 @@ html {
           justify-content: center;
 }
 
+@media screen and (max-width: 740px) {
+  .index--section1 .section1--div_ejemplos {
+    width: 100%;
+  }
+  .index--section1 .section1--div_ejemplos .Ejemplo {
+    min-height: 50vh;
+    width: 80%;
+    opacity: 1;
+  }
+  .index--section1 .section1--div_ejemplos .Ejemplo .Ejemplo--a {
+    width: 98%;
+    min-height: 48vh;
+  }
+  .index--section1 .section1--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner {
+    min-height: 48vh;
+  }
+  .index--section1 .section1--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .index--section2 {
   background-color: #12327C;
   color: #ffffff;
@@ -384,6 +406,13 @@ html {
   margin-left: 5vw;
   width: 90%;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 950px) {
+  .index--section2 .section2--bloque {
+    border-top: 1px solid #ffffff;
+    border-radius: 0;
+  }
 }
 
 .index--section2 .section2--bloque .bloque--pregunta {
