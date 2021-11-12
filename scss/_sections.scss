@@ -10,24 +10,67 @@
 
 }
 
-.index--section1{
+.index--home{
+    @extend .index--section;
+    @include flex(column,nowrap);
+    justify-content: space-around;
+    background-image: url(../imagenes/EscribiendoCodigo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $black;
+
+    .home--conteiner{
+        margin: auto;
+        margin-left: 7vw;
+        padding:3vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        
+        width:auto;
+        background-color: #ffffffbb;
+        
+        border-radius: 20px;
+        .home--tittle{
+            font-size: 45px;
+            width: 100%;
+        }
+        .home--p{
+            font-size: 25px;
+            width: 100%;
+            padding-left: 2.5vw;
+        }
+    }
+}
+
+
+.index--QuienSoy{
+    @extend .index--section;
+    @include flex(column,nowrap);
+
+    .home--title{
+
+    }
+}
+
+
+.index--proyectos{
     @extend .index--section;
     @include flex(column,nowrap);
     
-    .section1--h3{
+    .proyectos--h3{
         margin-left: 5vw;
         font-size: 30px;
         width:fit-content;
         min-height: 5vh;
     }
-    .section1--p{
+    .proyectos--p{
         margin-left: 5vw;
         font-size: 16px;
         width:fit-content;
         min-height: 5vh;
         padding: 2%
     }
-    .section1--div_ejemplos{
+    .proyectos--div_ejemplos{
         width: 90vw;
         margin:auto;
         @include flex(row,wrap);
@@ -123,89 +166,4 @@
 
     }
 
-
-
-
-}
-.index--section2{
-    background-color: $black;
-    color: $white;
-    @extend .index--section;
-    @include flex(column,nowrap);
-    padding-top: 5%;
-
-    
-    @media screen and (min-width:950px) {
-        
-        opacity: .7;
-        transition: opacity .5s;
-        &:hover{
-        opacity: 1;
-
-        }
-        .section2--bloque{
-            transition: color 2s;
-            transition: background-color 2s;
-            
-            .bloque--respuesta{
-                color: $black;
-            }
-            &:hover{
-                background-color: $white;
-                
-                .bloque--pregunta{
-                    color: $black;
-                    font-size: 20px;            
-                    width:fit-content;
-                    padding: 1vh;
-                }
-                .bloque--respuesta{        
-                    font-size: 16px;
-                    width:fit-content;
-                    padding: 1vh;
-                }
-            }
-        }
-       
-    }
-    
-
-    .section2--h3{
-        margin-left: 5vw;
-        font-size: 30px;
-        width:fit-content;
-        min-height: 5vh;
-    }
-    .section2--bloque{
-        margin-top: 2vh;
-        margin-left: 5vw;
-        width: 90%;
-        border-radius: 8px;
-        @media screen and (max-width:950px) {
-            border-top:1px solid $white;
-            border-radius: 0;
-        }
-        .bloque--pregunta{
-            font-size: 20px;            
-            width:fit-content;
-            padding: 1vh;
-        }
-        .bloque--respuesta{
-            
-            font-size: 16px;
-            width:fit-content;
-            padding: 1vh;
-            
-        }
-
-        
-    }
-    
-
-}
-.index--section3{
-    @extend .index--section;
-}
-.index--section4{
-    @extend .index--section;
 }

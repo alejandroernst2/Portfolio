@@ -160,7 +160,7 @@ html {
   }
 }
 
-.index--section, .index--section1, .index--section2, .index--section3, .index--section4 {
+.index--section, .index--home, .index--QuienSoy, .index--proyectos, .preguntas-frecuentes {
   width: 100%;
   min-height: 80vh;
   padding-top: 5%;
@@ -168,7 +168,47 @@ html {
   border-bottom: 1px solid #12327C;
 }
 
-.index--section1 {
+.index--home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: url(../imagenes/EscribiendoCodigo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #12327C;
+}
+
+.index--home .home--conteiner {
+  margin: auto;
+  margin-left: 7vw;
+  padding: 3vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  width: auto;
+  background-color: #ffffffbb;
+  border-radius: 20px;
+}
+
+.index--home .home--conteiner .home--tittle {
+  font-size: 45px;
+  width: 100%;
+}
+
+.index--home .home--conteiner .home--p {
+  font-size: 25px;
+  width: 100%;
+  padding-left: 2.5vw;
+}
+
+.index--QuienSoy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +220,19 @@ html {
       flex-wrap: nowrap;
 }
 
-.index--section1 .section1--h3 {
+.index--proyectos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.index--proyectos .proyectos--h3 {
   margin-left: 5vw;
   font-size: 30px;
   width: -webkit-fit-content;
@@ -189,7 +241,7 @@ html {
   min-height: 5vh;
 }
 
-.index--section1 .section1--p {
+.index--proyectos .proyectos--p {
   margin-left: 5vw;
   font-size: 16px;
   width: -webkit-fit-content;
@@ -199,7 +251,7 @@ html {
   padding: 2%;
 }
 
-.index--section1 .section1--div_ejemplos {
+.index--proyectos .proyectos--div_ejemplos {
   width: 90vw;
   margin: auto;
   display: -webkit-box;
@@ -216,7 +268,7 @@ html {
           justify-content: flex-start;
 }
 
-.index--section1 .section1--div_ejemplos .Ejemplo {
+.index--proyectos .proyectos--div_ejemplos .Ejemplo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,12 +288,12 @@ html {
   background-color: #ffffff;
 }
 
-.index--section1 .section1--div_ejemplos .Ejemplo:hover {
+.index--proyectos .proyectos--div_ejemplos .Ejemplo:hover {
   opacity: 1;
   z-index: 2;
 }
 
-.index--section1 .section1--div_ejemplos .Ejemplo .Ejemplo--a {
+.index--proyectos .proyectos--div_ejemplos .Ejemplo .Ejemplo--a {
   text-decoration: none;
   color: #12327C;
   width: 98%;
@@ -249,7 +301,7 @@ html {
   background-color: #ffffff;
 }
 
-.index--section1 .section1--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner {
+.index--proyectos .proyectos--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,24 +321,24 @@ html {
   background-color: #ffffff;
 }
 
-.index--section1 .section1--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner:hover {
+.index--proyectos .proyectos--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner:hover {
   -webkit-transform: scale(1.35);
           transform: scale(1.35);
 }
 
-.index--section1 .section1--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner:hover .ejemplo--div {
+.index--proyectos .proyectos--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner:hover .ejemplo--div {
   opacity: 1;
   z-index: 2;
 }
 
-.index--section1 .section1--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner .ejemplo--titulo {
+.index--proyectos .proyectos--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner .ejemplo--titulo {
   width: 100%;
   padding: 1%;
   text-align: center;
   height: 20%;
 }
 
-.index--section1 .section1--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner .ejemplo--div {
+.index--proyectos .proyectos--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner .ejemplo--div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -307,7 +359,7 @@ html {
       flex-wrap: wrap;
 }
 
-.index--section1 .section1--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner .ejemplo--div .ejemplo--imagen {
+.index--proyectos .proyectos--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner .ejemplo--div .ejemplo--imagen {
   max-width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -318,30 +370,30 @@ html {
 }
 
 @media screen and (max-width: 740px) {
-  .index--section1 .section1--div_ejemplos {
+  .index--proyectos .proyectos--div_ejemplos {
     width: 100%;
   }
-  .index--section1 .section1--div_ejemplos .Ejemplo {
+  .index--proyectos .proyectos--div_ejemplos .Ejemplo {
     min-height: 50vh;
     width: 80%;
     opacity: 1;
   }
-  .index--section1 .section1--div_ejemplos .Ejemplo .Ejemplo--a {
+  .index--proyectos .proyectos--div_ejemplos .Ejemplo .Ejemplo--a {
     width: 98%;
     min-height: 48vh;
   }
-  .index--section1 .section1--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner {
+  .index--proyectos .proyectos--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner {
     min-height: 48vh;
   }
-  .index--section1 .section1--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner:hover {
+  .index--proyectos .proyectos--div_ejemplos .Ejemplo .Ejemplo--a .Ejemplo--conteiner:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
 }
 
-.index--section2 {
-  background-color: #12327C;
-  color: #ffffff;
+.preguntas-frecuentes {
+  background-color: #ffffff;
+  color: #12327C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,35 +407,35 @@ html {
 }
 
 @media screen and (min-width: 950px) {
-  .index--section2 {
+  .preguntas-frecuentes {
     opacity: .7;
     -webkit-transition: opacity .5s;
     transition: opacity .5s;
   }
-  .index--section2:hover {
+  .preguntas-frecuentes:hover {
     opacity: 1;
   }
-  .index--section2 .section2--bloque {
+  .preguntas-frecuentes .preguntas--bloque {
     -webkit-transition: color 2s;
     transition: color 2s;
-    -webkit-transition: background-color 2s;
-    transition: background-color 2s;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
   }
-  .index--section2 .section2--bloque .bloque--respuesta {
-    color: #12327C;
+  .preguntas-frecuentes .preguntas--bloque .bloque--respuesta {
+    color: #ffffff;
   }
-  .index--section2 .section2--bloque:hover {
-    background-color: #ffffff;
+  .preguntas-frecuentes .preguntas--bloque:hover {
+    background-color: #12327C;
   }
-  .index--section2 .section2--bloque:hover .bloque--pregunta {
-    color: #12327C;
+  .preguntas-frecuentes .preguntas--bloque:hover .bloque--pregunta {
+    color: #ffffff;
     font-size: 20px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding: 1vh;
   }
-  .index--section2 .section2--bloque:hover .bloque--respuesta {
+  .preguntas-frecuentes .preguntas--bloque:hover .bloque--respuesta {
     font-size: 16px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -392,7 +444,7 @@ html {
   }
 }
 
-.index--section2 .section2--h3 {
+.preguntas-frecuentes .preguntas--h3 {
   margin-left: 5vw;
   font-size: 30px;
   width: -webkit-fit-content;
@@ -401,7 +453,7 @@ html {
   min-height: 5vh;
 }
 
-.index--section2 .section2--bloque {
+.preguntas-frecuentes .preguntas--bloque {
   margin-top: 2vh;
   margin-left: 5vw;
   width: 90%;
@@ -409,13 +461,13 @@ html {
 }
 
 @media screen and (max-width: 950px) {
-  .index--section2 .section2--bloque {
+  .preguntas-frecuentes .preguntas--bloque {
     border-top: 1px solid #ffffff;
     border-radius: 0;
   }
 }
 
-.index--section2 .section2--bloque .bloque--pregunta {
+.preguntas-frecuentes .preguntas--bloque .bloque--pregunta {
   font-size: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -423,7 +475,7 @@ html {
   padding: 1vh;
 }
 
-.index--section2 .section2--bloque .bloque--respuesta {
+.preguntas-frecuentes .preguntas--bloque .bloque--respuesta {
   font-size: 16px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
