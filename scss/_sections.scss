@@ -1,14 +1,15 @@
 
 .index--section{
-    width: 100%;
-    min-height:80vh;
+ 
+    min-height:100vh;
     padding-top: 5%;
     padding-bottom: 5%;
-    border-bottom: 1px solid $black;
+
 
 
 
 }
+
 
 .index--home{
     @extend .index--section;
@@ -30,26 +31,99 @@
         background-color: #ffffffbb;
         
         border-radius: 20px;
+
+        animation-name: aparecernombre;
+        animation-duration: 2s;
+
+        transition: transform 1s;
+
+        &:hover{
+            @media screen and (max-width:900px) {
+            transform:scale(1.1);
+            }
+            @media screen and (min-width:1200px) {
+                transform:translateX(30%);
+            }
+        }
         .home--tittle{
             font-size: 45px;
             width: 100%;
+           
+            
         }
         .home--p{
             font-size: 25px;
             width: 100%;
             padding-left: 2.5vw;
         }
+        @media screen and (max-width:950px) {
+            .home--tittle{
+                font-size: 35px;
+            }
+            .home--p{
+                font-size: 20px;
+            }
+
+        }
+        @media screen and (max-width:450px) {
+            .home--tittle{
+                font-size: 25px;
+            }
+            .home--p{
+                font-size: 14px;
+            }
+
+        }
     }
 }
 
 
-.index--QuienSoy{
+.index--QS{
     @extend .index--section;
     @include flex(column,nowrap);
+    color: $black;
 
-    .home--title{
-
+    .QS--tittle{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 3vh;
     }
+    .QS--par{
+        width: 90%;
+        padding-bottom: 3vh;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+        .QS--par_link{
+            color: $black;
+
+        }
+    }
+
+
+    .QS--lenguajes{
+        @include flex (row, wrap);
+        justify-content: space-around;
+        padding-bottom: 3vh;
+
+        .QS--lenguajes__div{
+                width: 30vw;
+                height:  30vw;
+                @include flex (row, wrap);
+                justify-content: space-around;
+                border: 1px ;
+                border: 2px solid #12327C33;
+                border-radius: 5px;
+            .QS--lenguajes__img{
+                margin: auto;
+                width: 20vw;
+                height:  20vw;
+
+            }
+        }
+    }
+
 }
 
 

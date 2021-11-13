@@ -16,65 +16,63 @@
 </head>
 <body>
     <header  id="inicio" class="index--header header">
-        <div class="header--titulos">
-            <h1 class="header--h1">ALEJANDRO ERNST</h1>
-            <h2 class="header--h2">DESARROLLADOR WEB</h2>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#inicio">DESARROLLADOR WEB</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#inicio">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#desarrollos">PROYECTOS</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PRESUPUESTOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACTO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">REDES</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <nav class="header--nav">
+            <ul class="header--ul">
+                <li class="header--li">
+                     <a class="header--li_a" href="#inicio"> <p class="header--li_p">INICIO </p></a> 
+                </li>
+    
+                <li class="header--li">
+                     <a class="header--li_a" href="#desarrollos"> <p class="header--li_p">DESARROLLOS </p></a>
+                </li>
+    
+                <li class="header--li">
+                     <a class="header--li_a" href="#"> <p class="header--li_p">PRESUPUESTOS </p></a>
+                </li>
+    
+                <li class="header--li">
+                     <a class="header--li_a" href="#"> <p class="header--li_p">CONTACTO </p></a>
+                </li>
+    
+                <li class="header--li">
+                     <a class="header--li_a" href="#"> <p class="header--li_p">REDES </p></a>
+                </li>  
+    
+            </ul>
+            
+        </nav>
+       
 
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#inicio">DESARROLLADOR WEB</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#inicio">INICIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#desarrollos">PROYECTOS</a>
-              </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">PRESUPUESTOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">REDES</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <nav class="header--nav">
-        <ul class="header--ul">
-            <li class="header--li">
-                 <a class="header--li_a" href="#inicio"> <p class="header--li_p">INICIO </p></a> 
-            </li>
-
-            <li class="header--li">
-                 <a class="header--li_a" href="#desarrollos"> <p class="header--li_p">DESARROLLOS </p></a>
-            </li>
-
-            <li class="header--li">
-                 <a class="header--li_a" href="#"> <p class="header--li_p">PRESUPUESTOS </p></a>
-            </li>
-
-            <li class="header--li">
-                 <a class="header--li_a" href="#"> <p class="header--li_p">CONTACTO </p></a>
-            </li>
-
-            <li class="header--li">
-                 <a class="header--li_a" href="#"> <p class="header--li_p">REDES </p></a>
-            </li>  
-
-        </ul>
-        
-    </nav>
     
    
     <main class="index--main">
@@ -88,23 +86,33 @@
 
         </section>
 
-        <section class="index--QuienSoy">
+        <section class="index--QS">
 
-            <h3 class="home--tittle">
+            <h3 class="QS--tittle">
                 ¿QUIEN SOY?
             </h3>
-            <p class="home--par1">
+            <p class="QS--par">
                 Mi nombre es Alejandro Ernst, tengo 19 años, y soy Desarrollador Web.
             </p>
-            <p class="home--par2">
-                Empecé mi carrera en el ámbito del desarrollo en 2021. Realicé el curso de desarrollo web de CoderHouse (va con link), donde aprendí diferentes Lenguajes para desarrollar una web, principalmente HTML, CSS y SASS.  
+            <p class="QS--par">
+                Empecé mi carrera en el ámbito del desarrollo en 2021. Realicé el curso de desarrollo web de <a target="_blank" class="QS--par_link" href="https://www.coderhouse.com/online/desarrollo-web-online">CoderHouse</a>, donde aprendí diferentes Lenguajes para desarrollar una web, principalmente HTML, SASS y CSS.  
             </p>
-            <div class="hom--div_leng">
-                <img src="imagenes/logohtml.png" alt="Lengiaje Html">
-                <img src="imagenes/logocss.png" alt="Lenguaje css">
-                <img src="imagenes/logosass.png" alt="Lenguaje Sass">
+            <div class="QS--lenguajes">
+
+                <div class="QS--lenguajes__div">    
+                        <img  class="QS--lenguajes__img" src="imagenes/logohtml.png" alt="Lengiaje Html">
+                </div>
+                <div class="QS--lenguajes__div">
+                    <img  class="QS--lenguajes__img" src="imagenes/logosass.png" alt="Lenguaje Sass">
+                </div>
+                <div class="QS--lenguajes__div">
+                        <img  class="QS--lenguajes__img" src="imagenes/logocss.png" alt="Lenguaje css">
+                </div>
+                
+
+
             </div>
-            <p class="home--par3">
+            <p class="QS--par">
                 Finalicé el curso a principios de noviembre de 2021, y ansioso por seguir aprendiendo, me anoté en el curso de JavaScript, un lenguaje que me permitirá realizar páginas web con mayor complejidad e interactividad.
             </p>
 
